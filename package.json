@@ -1,6 +1,6 @@
 {
   "name": "@fantaskticedtechlimited/fui-colorlib",
-  "version": "0.0.1-beta-v1",
+  "version": "0.0.1-beta-v2",
   "description": "Fantasktic UI Color library",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
