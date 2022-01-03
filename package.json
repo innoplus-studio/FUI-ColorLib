@@ -1,6 +1,6 @@
 {
   "name": "fui-colorlib",
-  "version": "0.0.1",
+  "version": "0.0.1-beta",
   "description": "Fantasktic UI Color library",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
@@ -28,7 +28,10 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "files": [
     "/lib"
- ]
+  ]
 }
