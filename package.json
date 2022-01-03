@@ -14,9 +14,6 @@
     "build:esm": "tsc",
     "build:cjs": "tsc --module commonjs --outDir lib/cjs"
   },
-  "dependencies": {
-    "yarn": "^1.22.17"
-  },
   "devDependencies": {
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
