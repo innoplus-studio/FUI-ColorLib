@@ -1,23 +1,26 @@
-enum Brand_Colors {
-	BRAND = "#3246FF",
-	BRAND_BG = "#F1F3FF",
-}
+// Merge Enum to single Enum
+// https://stackoverflow.com/questions/48478361/how-to-merge-two-enums-in-typescript
 
 enum Primary_Colors {
-	BLACK = "#202020",
-	DARK = "#505176",
-	GREY = "#B0B6BB",
-	LIGHT = "#E2E2E2",
-	WHITE = "#FFFFFF",
+	PRIMARY_BLACK = "#202020",
+	PRIMARY_DARK = "#505176",
+	PRIMARY_GREY = "#B0B6BB",
+	PRIMARY_LIGHT = "#E2E2E2",
+	PRIMARY_WHITE = "#FFFFFF",
 }
 
 enum Secondary_Colors {
-	RED = "#F95141",
-	ORANGE = "#FFB131",
-	YELLOW = "#FFCD33",
-	GREEN = "#2ED47A",
-	BLUE = "#109CF1",
-	PURPLE = "#885AF8",
+	SECONDARY_RED = "#F95141",
+	SECONDARY_ORANGE = "#FFB131",
+	SECONDARY_YELLOW = "#FFCD33",
+	SECONDARY_GREEN = "#2ED47A",
+	SECONDARY_BLUE = "#109CF1",
+	SECONDARY_PURPLE = "#885AF8",
+}
+
+enum Brand_Colors {
+	BRAND = "#3246FF",
+	BRAND_BG = "#F1F3FF",
 }
 
 enum Special_BG_Colors {
@@ -26,18 +29,27 @@ enum Special_BG_Colors {
 }
 
 enum Uni_Plus_Colors {
-	LIGHT = "#FEF3EF",
-	ORANGE = "#EE663C",
+	UNI_LIGHT = "#FEF3EF",
+	UNI_ORANGE = "#EE663C",
 }
 
-const Project_Brand_Colors = {
-	UNI_PLUS: Uni_Plus_Colors,
-};
+// const Project_Brand_Colors = {
+// 	UNI_PLUS: Uni_Plus_Colors,
+// };
+
+// export const FColorTypes = {
+// 	BRAND_COLORS: Brand_Colors,
+// 	PRIMARY_COLORS: Primary_Colors,
+// 	SECONDARY_COLORS: Secondary_Colors,
+// 	SPECIAL_BG_COLORS: Special_BG_Colors,
+// 	PROJECT_BRAND_COLORS: Project_Brand_Colors,
+// };
 
 export const FColorTypes = {
-	BRAND_COLORS: Brand_Colors,
-	PRIMARY_COLORS: Primary_Colors,
-	SECONDARY_COLORS: Secondary_Colors,
-	SPECIAL_BG_COLORS: Special_BG_Colors,
-	PROJECT_BRAND_COLORS: Project_Brand_Colors,
+	...Primary_Colors,
+	...Secondary_Colors,
+	...Brand_Colors,
+	...Special_BG_Colors,
+	...Uni_Plus_Colors,
 };
+export type FColorTypes = typeof FColorTypes;
