@@ -1,19 +1,43 @@
-export enum FColorTypes {
-	BLACK = "#14153A",
-	BLUE = "#109CF1",
-	BRAND = "#3145F5",
-	DARK_GREY = "#434461",
-	GREEN = "#2ED47A",
-	GREY = "#A0A1AF",
-	GREYISH_WHITE = "#F7F8FB",
-	HARD_STROKE = "#E8E8E8",
-	LIGHT_GREY = "#D0D0D7",
-	LIGHT_GREYISH_WHITE = "#FDFDFF",
-	ORANGE = "#FFB131",
-	PURE_WHITE = "#FFFFFF",
-	PURPLE = "#885AF8",
-	PURPLE_BG = "#F0F0FD",
-	RED = "#F95141",
-	SOFT_STROKE = "#1A1A1C14",
-	YELLOW = "#FFCD33",
+enum Brand_Colors {
+	BRAND = "#3246FF",
+	BRAND_BG = "#F1F3FF",
 }
+
+enum Primary_Colors {
+	BLACK = "#202020",
+	DARK = "#505176",
+	GREY = "#B0B6BB",
+	LIGHT = "#E2E2E2",
+	WHITE = "#FFFFFF",
+}
+
+enum Secondary_Colors {
+	RED = "#F95141",
+	ORANGE = "#FFB131",
+	YELLOW = "#FFCD33",
+	GREEN = "#2ED47A",
+	BLUE = "#109CF1",
+	PURPLE = "#885AF8",
+}
+
+enum Special_BG_Colors {
+	CONTENT_WRAPPER_BG = "#FCFCFF",
+	PANEL_BG_COLOR = "#F8F8FB",
+}
+
+enum Uni_Plus_Colors {
+	LIGHT = "#FEF3EF",
+	ORANGE = "#EE663C",
+}
+
+const Project_Brand_Colors = {
+	UNI_PLUS: Uni_Plus_Colors,
+};
+
+export const FColorTypes = {
+	BRAND_COLORS: Brand_Colors,
+	PRIMARY_COLORS: Primary_Colors,
+	SECONDARY_COLORS: Secondary_Colors,
+	SPECIAL_BG_COLORS: Special_BG_Colors,
+	PROJECT_BRAND_COLORS: Project_Brand_Colors,
+};
