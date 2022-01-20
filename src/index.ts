@@ -1,3 +1,3 @@
-import { FColorTypes } from "./color.types";
+import { FColorTypes } from "./types";
 
 export { FColorTypes }

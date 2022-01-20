@@ -29,9 +29,19 @@ enum Special_BG_Colors {
 }
 
 enum Uni_Plus_Colors {
-	UNI_LIGHT = "#FEF3EF",
-	UNI_ORANGE = "#EE663C",
+	UNIPLUS_LIGHT = "#FEF3EF",
+	UNIPLUS_ORANGE = "#EE663C",
 }
+
+export const FColorTypes = {
+	...Primary_Colors,
+	...Secondary_Colors,
+	...Brand_Colors,
+	...Special_BG_Colors,
+	...Uni_Plus_Colors,
+};
+
+export type FColorTypes = typeof FColorTypes;
 
 // const Project_Brand_Colors = {
 // 	UNI_PLUS: Uni_Plus_Colors,
@@ -44,12 +54,3 @@ enum Uni_Plus_Colors {
 // 	SPECIAL_BG_COLORS: Special_BG_Colors,
 // 	PROJECT_BRAND_COLORS: Project_Brand_Colors,
 // };
-
-export const FColorTypes = {
-	...Primary_Colors,
-	...Secondary_Colors,
-	...Brand_Colors,
-	...Special_BG_Colors,
-	...Uni_Plus_Colors,
-};
-export type FColorTypes = typeof FColorTypes;
