@@ -2,6 +2,7 @@
 // https://stackoverflow.com/questions/48478361/how-to-merge-two-enums-in-typescript
 
 enum Primary_Colors {
+	PRIMARY_ACCENT = "#3246FF",
 	PRIMARY_BLACK = "#202020",
 	PRIMARY_DARK = "#505176",
 	PRIMARY_GREY = "#B0B6BB",
@@ -19,7 +20,6 @@ enum Secondary_Colors {
 }
 
 enum Brand_Colors {
-	BRAND = "#3246FF",
 	BRAND_BG = "#F1F3FF",
 }
 
@@ -42,15 +42,3 @@ export const FColorTypes = {
 };
 
 export type FColorTypes = typeof FColorTypes;
-
-// const Project_Brand_Colors = {
-// 	UNI_PLUS: Uni_Plus_Colors,
-// };
-
-// export const FColorTypes = {
-// 	BRAND_COLORS: Brand_Colors,
-// 	PRIMARY_COLORS: Primary_Colors,
-// 	SECONDARY_COLORS: Secondary_Colors,
-// 	SPECIAL_BG_COLORS: Special_BG_Colors,
-// 	PROJECT_BRAND_COLORS: Project_Brand_Colors,
-// };
