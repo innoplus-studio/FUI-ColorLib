@@ -1,8 +1,12 @@
 // Merge Enum to single Enum
 // https://stackoverflow.com/questions/48478361/how-to-merge-two-enums-in-typescript
 
-enum Primary_Colors {
-	PRIMARY_ACCENT = "#3246FF",
+enum Default_Theme_Colors {
+	DEFAULT_MAIN_THEME = "#3246FF",
+	DEFAULT_SUB_THEME = "#F1F3FF",
+}
+
+enum Primary_Colors { 
 	PRIMARY_BLACK = "#202020",
 	PRIMARY_DARK = "#505176",
 	PRIMARY_GREY = "#B0B6BB",
@@ -19,10 +23,6 @@ enum Secondary_Colors {
 	SECONDARY_PURPLE = "#885AF8",
 }
 
-enum Brand_Colors {
-	BRAND_BG = "#F1F3FF",
-}
-
 enum Special_BG_Colors {
 	CONTENT_WRAPPER_BG = "#FCFCFF",
 	PANEL_BG_COLOR = "#F8F8FB",
@@ -34,9 +34,9 @@ enum Uni_Plus_Colors {
 }
 
 export const FColorTypes = {
+	...Default_Theme_Colors,
 	...Primary_Colors,
 	...Secondary_Colors,
-	...Brand_Colors,
 	...Special_BG_Colors,
 	...Uni_Plus_Colors,
 };
