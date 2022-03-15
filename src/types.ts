@@ -2,15 +2,15 @@
 // https://stackoverflow.com/questions/48478361/how-to-merge-two-enums-in-typescript
 
 enum Default_Theme_Colors {
-	DEFAULT_MAIN_THEME = "#3246FF",
-	DEFAULT_SUB_THEME = "#F1F3FF",
+	DEFAULT_MAIN_THEME = "#3145F5",
+	DEFAULT_SUB_THEME = "#EFF0FE",
 }
 
-enum Primary_Colors { 
-	PRIMARY_BLACK = "#202020",
-	PRIMARY_DARK = "#505176",
-	PRIMARY_GREY = "#B0B6BB",
-	PRIMARY_LIGHT = "#E2E2E2",
+enum Primary_Colors {
+	PRIMARY_BLACK = "#14153A",
+	PRIMARY_DARK = "#3C3D62",
+	PRIMARY_GREY = "#C6C7CD",
+	PRIMARY_LIGHT = "#F6F8FB",
 	PRIMARY_WHITE = "#FFFFFF",
 }
 
@@ -23,22 +23,16 @@ enum Secondary_Colors {
 	SECONDARY_PURPLE = "#885AF8",
 }
 
-enum Special_BG_Colors {
-	CONTENT_WRAPPER_BG = "#FCFCFF",
-	PANEL_BG_COLOR = "#F8F8FB",
-}
-
-enum Uni_Plus_Colors {
-	UNIPLUS_LIGHT = "#FEF3EF",
-	UNIPLUS_ORANGE = "#EE663C",
+enum Special_Colors {
+	SPECIAL_STROKE = "#00000014",
+	SPECIAL_GLASS_WHITE = "#FFFFFFE0",
 }
 
 export const FColorTypes = {
 	...Default_Theme_Colors,
 	...Primary_Colors,
 	...Secondary_Colors,
-	...Special_BG_Colors,
-	...Uni_Plus_Colors,
+	...Special_Colors,
 };
 
 export type FColorTypes = typeof FColorTypes;
