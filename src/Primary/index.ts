@@ -1,8 +1,12 @@
-export enum PrimaryColors {
-	BLACK = "#111111",
-	DARK = "#323337",
-	GREY = "#BBBBBD",
-	STROKE_GREY = "#EBEBEB",
-	BG_LIGHT = "#F8F8F8",
-	WHITE = "#FFFFFF",
-}
+import { BG_LIGHT, BLACK, DARK, GREY, STROKE_GREY, WHITE } from "./types";
+
+export const PrimaryColors = () => {
+	return {
+		BLACK: { ...BLACK },
+		DARK: { ...DARK },
+		GREY: { ...GREY },
+		STROKE_GREY: { ...STROKE_GREY },
+		BG_LIGHT: { ...BG_LIGHT },
+		WHITE: { ...WHITE },
+	};
+};
