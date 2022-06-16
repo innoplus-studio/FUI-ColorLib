@@ -1,5 +1,8 @@
 import { FColorTypes, FUseColorProps } from "./types";
 
+/**
+ * Function to convert color to and from dark and light mode
+ */
 const FUseColor = (props: FUseColorProps) => {
 	switch (props.colorName) {
 		// =======================================================================

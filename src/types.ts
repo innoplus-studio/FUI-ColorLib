@@ -20,7 +20,13 @@ export namespace FColorTypes {
 type FColorNames = ThemeColorNames | PrimaryColorNames | SecondaryColorNames;
 
 export interface FUseColorProps {
+	/**
+	 * Color name is the normal color in light mode
+	 */
 	colorName: FColorNames;
+	/**
+	 * Whether the environment is in dark mode or not
+	 */
 	isDarkMode: boolean;
 	/**
 	 * Optional color is for the change of the dark mode color
