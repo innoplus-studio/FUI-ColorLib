@@ -1,7 +1,13 @@
 import { FColorTypes, FUseColorProps } from "./types";
 
 /**
- * Function to convert color to and from dark and light mode
+ * Function to convert color to and from dark and light mode.
+ *
+ * For example,
+ *
+ * FUseColor({ colorName: "Black", isDarkMode: FCheckIsDarkMode() })
+ * will return black color based on light or dark mode, where
+ * FCheckIsDarkMode() is to check the browser is in dark mode or not.
  */
 const FUseColor = (props: FUseColorProps) => {
 	switch (props.colorName) {
