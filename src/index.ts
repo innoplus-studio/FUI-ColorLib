@@ -1,3 +1,3 @@
-import { FColorTypes, FColorNames } from "./types";
+import { FColorTypes, FColorNames, FLegacyColorTypes } from "./types";
 
-export { FColorTypes, FColorNames };
+export { FColorTypes, FColorNames, FLegacyColorTypes };
