@@ -2,4 +2,4 @@
 
 To install:
 
-`yarn add @fantaskticedtechlimited/fui-colorlib`
+`yarn add @innoplus-studio/fui-colorlib`
